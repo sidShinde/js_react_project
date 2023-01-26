@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+  border-spacing: 0;
+}
+
+.nav-bar {
+  font-size: 15px;
+}
+
+.border-right {
+  border-right: 2px solid black;
+}
+
+.nav-bar td:nth-child(1) {
+  padding: 0rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.div-title {
+  margin-top: 20px;
+  border: solid 2px black;
+  display: inline-block;
+  width: 100%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  vertical-align: middle;
+}
+
+.chat-text {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 140px;
+  border-bottom: 2px solid black;
+  border-radius: 3px;
+}
+
+.chat-text p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.chat-enter {
+  margin-top: 20px;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+}
+
+.chat-enter span:nth-child(1) {
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.chat-enter span:nth-child(2) {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding-top: 4px;
+  padding-right: 70%;
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
+
+.span-button {
+  margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+  padding: 2px;
+}
+
+.close-div-1 {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.close-div-2 {
+  height: 22px;
+  width: 1.5px;
+  margin-left: 11px;
+  margin-top: 1.5px;
+  background-color: black;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.close-div-3 {
+  height: 22px;
+  width: 1.5px;
+  background-color: black;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+.group-chat {
+  display: inline-block;
+  padding-left: 700px;
+  padding-top: 0px;
+  height: 20px;
+}
+
+.close-div {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 700px;
+  vertical-align: bottom;
+}

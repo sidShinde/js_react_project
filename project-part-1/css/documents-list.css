@@ -1,0 +1,264 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+table {
+  border-spacing: 0;
+}
+
+.nav-bar {
+  font-size: 1.5rem;
+}
+
+.nav-bar td:nth-child(3) {
+  padding: 0rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.div-table tr:nth-child(1) {
+  background-color: rgb(204, 204, 204);
+}
+
+.div-table tr:nth-child(2n + 3) {
+  background-color: rgb(229, 229, 229);
+}
+
+.div-table tr:nth-child(6) td {
+  height: 1.4rem;
+}
+
+.div-table td {
+  height: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.div-title {
+  text-align: left;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+.div-table {
+  border: 0.2rem solid black;
+  border-radius: 0.4rem;
+  margin-left: 0.3rem;
+  font-size: 1.4rem;
+}
+
+.border-right {
+  border-right: 2px solid black;
+}
+
+.doc-table {
+  width: 100%;
+}
+
+.table-col-1 {
+  width: 38%;
+}
+
+.table-col-2 {
+  width: 38%;
+  text-align: center;
+}
+
+.table-col-3 {
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 15rem;
+  height: 3rem;
+  background-color: aqua;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  border: 0.25rem solid black;
+  text-align: left;
+}
+
+.div-button {
+  position: absolute;
+  left: -68.9rem;
+  top: 51.8rem;
+  z-index: 8;
+}
+
+.div-button:hover {
+  cursor: pointer;
+}
+
+.upload-modal {
+  width: 30%;
+  border: 0.2rem solid black;
+  position: fixed;
+  z-index: 1;
+  left: 30rem;
+  top: 16rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.edit-modal {
+  width: 30%;
+  border: 0.2rem solid black;
+  position: fixed;
+  z-index: 1;
+  left: 30rem;
+  top: 16rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.confirm-modal {
+  width: 18%;
+  border: 0.2rem solid black;
+  position: fixed;
+  z-index: 1;
+  left: 50rem;
+  top: 23rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.modal-title-text {
+  width: 42.4rem;
+  font-weight: bold;
+}
+
+.confirm-modal .modal-title-text {
+  width: 24rem;
+  font-weight: normal;
+}
+
+.file-desc {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.file-desc-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.file-desc-input {
+  margin-left: 2rem;
+  width: 27rem;
+}
+
+.file-desc-input::placeholder {
+  font-size: 1.4rem;
+}
+
+.file-upload {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.file-upload span {
+  padding: 2rem;
+}
+
+.file-upload button {
+  font-weight: bold;
+  background-color: rgb(175, 175, 175);
+  padding: 0.4rem;
+  border-radius: 0.6rem;
+}
+
+.upload-button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.upload-button a {
+  border: 0.2rem solid black;
+  border-radius: 0.8rem;
+  background-color: rgb(175, 175, 175);
+  padding: 0.5rem 2rem;
+  margin-left: 3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.upload-button a:hover {
+  cursor: pointer;
+}
+
+.edit-button {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  margin-left: 13.7rem;
+}
+
+.edit-button a {
+  border: 0.2rem solid black;
+  border-radius: 0.8rem;
+  background-color: rgb(175, 175, 175);
+  padding: 0.5rem 2rem;
+  margin-left: 3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.edit-button a:hover {
+  cursor: pointer;
+}
+
+.confirm-body {
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.confirm-message {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.confirm-question {
+  display: inline-block;
+  width: 50;
+  height: 40;
+  padding-left: 1.2rem;
+  padding-right: 1rem;
+  vertical-align: middle;
+}
+
+.confirm-text {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.confirm-button {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.button {
+  border: 0.2rem solid black;
+  border-radius: 0.8rem;
+  background-color: white;
+  padding: 0.5rem 2rem;
+  margin-left: 2rem;
+}
+
+.button:hover {
+  border-color: blue;
+  border-width: 0.4rem;
+  cursor: pointer;
+}

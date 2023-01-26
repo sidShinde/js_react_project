@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Communications Application</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/documents-list.css" />
+
+    <script>
+      function onLoad() {
+        hideEdit();
+        hideUpload();
+        hideDelete();
+      }
+
+      function showUpload() {
+        document.getElementById("upload-modal").style.display = "block"; // show upload modal
+        document.getElementById("div-button").style.backgroundColor = "white";
+      }
+
+      function hideUpload() {
+        document.getElementById("upload-modal").style.display = "none"; // hide upload modal
+        document.getElementById("div-button").style.backgroundColor = "aqua";
+      }
+
+      function showEdit() {
+        document.getElementById("edit-modal").style.display = "block"; // show edit modal
+        document.getElementById("div-button").style.backgroundColor = "white";
+      }
+
+      function hideEdit() {
+        document.getElementById("edit-modal").style.display = "none"; // hide edit modal
+        document.getElementById("div-button").style.backgroundColor = "aqua";
+      }
+
+      function showDelete() {
+        document.getElementById("confirm-modal").style.display = "block"; // show delete modal
+        document.getElementById("div-button").style.backgroundColor = "white";
+      }
+
+      function hideDelete() {
+        document.getElementById("confirm-modal").style.display = "none"; // hide delete modal
+        document.getElementById("div-button").style.backgroundColor = "aqua";
+      }
+    </script>
+  </head>
+  <body onload="onLoad()">
+    <div>
+      <table class="nav-bar">
+        <tr>
+          <td class="border-right">
+            <a href="./chat.html">Group Chat</a>
+          </td>
+          <td class="border-right">
+            <a href="./users-list.html">Manage Users</a>
+          </td>
+          <td class="border-right">
+            <a href="./documents-list.html">Manage Documents</a>
+          </td>
+          <td>
+            <a href="./logout.html">Logout</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="div-title">
+      <h2>My Uploads</h2>
+    </div>
+    <div class="div-table">
+      <table class="doc-table">
+        <tr>
+          <td class="border-right table-col-1">Label</td>
+          <td class="border-right table-col-2">File Name</td>
+          <td class="border-right table-col-3">Action</td>
+        </tr>
+        <tr>
+          <td class="border-right">Sales Report</td>
+          <td class="border-right table-col-2">sales-Sep2014.xls</td>
+          <td class="table-col-3">
+            <a href="javascript:;" onclick="showEdit()">Edit</a> |
+            <a href="javascript:;" onclick="showDelete()">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-right">Quaterly Summary</td>
+          <td class="border-right table-col-2">SummaryQ4-2014.ppt</td>
+          <td class="table-col-3">
+            <a href="javascript:;" onclick="showEdit()">Edit</a> |
+            <a href="javascript:;" onclick="showDelete()">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-right">Projection 2013-14</td>
+          <td class="border-right table-col-2">SalesProfitProject.xls</td>
+          <td class="table-col-3">
+            <a href="javascript:;" onclick="showEdit()">Edit</a> |
+            <a href="javascript:;" onclick="showDelete()">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="div-title">
+      <h2>Shared Uploads</h2>
+    </div>
+    <div class="div-table">
+      <table class="doc-table">
+        <tr>
+          <td class="border-right table-col-1">Label</td>
+          <td class="border-right table-col-2">File Name</td>
+          <td class="border-right table-col-3">Shared by</td>
+        </tr>
+        <tr>
+          <td class="border-right">Sales Team Attendance Sept 2014</td>
+          <td class="border-right table-col-2">Sale-Attend-Sep2014.xls</td>
+          <td class="table-col-3">anne.hunter@mail.com</td>
+        </tr>
+        <tr>
+          <td class="border-right">Office Rules</td>
+          <td class="border-right table-col-2">OfficeRule.doc</td>
+          <td class="table-col-3">hr@office.com</td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+      </table>
+      <div class="div-button">
+        <input
+          id="div-button"
+          type="submit"
+          onclick="showUpload()"
+          value="+ Add Upload"
+        />
+      </div>
+    </div>
+    <div class="upload-modal" id="upload-modal">
+      <div class="modal-title">
+        <div class="modal-title-text">Upload</div>
+        <div class="modal-close">
+          <img
+            class="modal-cross"
+            src="../images/close.png"
+            onclick="hideUpload()"
+          />
+        </div>
+      </div>
+      <div class="file-desc">
+        <span class="file-desc-text"> File Description </span>
+        <span>
+          <input
+            class="file-desc-input"
+            type="text"
+            placeholder="Sample File"
+          />
+        </span>
+      </div>
+      <div class="file-upload">
+        <span> File Upload </span>
+        <span>
+          <button>Choose File</button>
+        </span>
+        <span> Sample.doc </span>
+      </div>
+      <div class="upload-button">
+        <a href="javascript:;" onclick="hideUpload()">Upload Now</a>
+        <a href="javascript:;" onclick="hideUpload()">Cancel</a>
+      </div>
+    </div>
+    <div class="edit-modal" id="edit-modal">
+      <div class="modal-title">
+        <div class="modal-title-text">Edit</div>
+        <div class="modal-close">
+          <img
+            class="modal-cross"
+            src="../images/close.png"
+            onclick="hideEdit()"
+          />
+        </div>
+      </div>
+      <div class="file-desc">
+        <span class="file-desc-text"> File Description </span>
+        <span>
+          <input
+            class="file-desc-input"
+            type="text"
+            placeholder="Sales Report"
+          />
+        </span>
+      </div>
+      <div class="edit-button">
+        <a href="javascript:;" onclick="hideEdit()">Save</a>
+        <a href="javascript:;" onclick="hideEdit()">Cancel</a>
+      </div>
+    </div>
+    <div class="confirm-modal" id="confirm-modal">
+      <div class="modal-title">
+        <div class="modal-title-text">Confirm User Deletion</div>
+        <div class="modal-close">
+          <img
+            class="modal-cross"
+            src="../images/close.png"
+            onclick="hideDelete()"
+          />
+        </div>
+      </div>
+      <div class="confirm-body">
+        <div class="confirm-message">
+          <div class="confirm-question">
+            <img src="../images/question.png" />
+          </div>
+          <div class="confirm-text">Are you sure?</div>
+        </div>
+        <div class="confirm-button">
+          <a href="javascript:;" class="button" onclick="hideDelete()">Ok</a>
+          <a href="javascript:;" class="button" onclick="hideDelete()"
+            >Cancel</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Communications Application</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/user-list.css" />
+
+    <script>
+      function show() {
+        document.getElementById("confirm-modal").style.display = "block"; // show confirm modal
+      }
+
+      function hide() {
+        document.getElementById("confirm-modal").style.display = "none"; // hide confirm modal
+      }
+    </script>
+  </head>
+
+  <body onload="hide()">
+    <div>
+      <table class="nav-bar">
+        <tr>
+          <td class="border-right">
+            <a href="./chat.html">Group Chat</a>
+          </td>
+          <td class="border-right">
+            <a href="./users-list.html">Manage Users</a>
+          </td>
+          <td class="border-right">
+            <a href="./documents-list.html">Manage Documents</a>
+          </td>
+          <td>
+            <a href="./logout.html">Logout</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="div-title">
+      <h2>Users</h2>
+    </div>
+    <div class="div-table">
+      <table class="user-table">
+        <tr>
+          <td class="border-right table-col-1">Name</td>
+          <td class="border-right table-col-2">User Email ID</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="border-right">Text User</td>
+          <td class="border-right table-col-2">textuser@gmail.com</td>
+          <td class="table-col-3">
+            <a href="#">Edit</a> |
+            <a href="javascript:;" onclick="show()">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-right">Anne Hunter</td>
+          <td class="border-right table-col-2">anne.hunter@mail.com</td>
+          <td class="table-col-3">
+            <a href="#">Edit</a> |
+            <a href="javascript:;" onclick="show()">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-right">Jale Boser</td>
+          <td class="border-right table-col-2">Jale@yahoo.com</td>
+          <td class="table-col-3">
+            <a href="#">Edit</a> |
+            <a href="javascript:;" onclick="show()">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+        <tr>
+          <td class="border-right"></td>
+          <td class="border-right"></td>
+          <td class="table-col-3"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="confirm-modal" id="confirm-modal">
+      <div class="modal-title">
+        <div class="modal-title-text">Confirm User Deletion</div>
+        <div class="modal-close">
+          <img class="modal-cross" src="../images/close.png" onclick="hide()" />
+        </div>
+      </div>
+      <div class="confirm-body">
+        <div class="confirm-message">
+          <div class="confirm-question">
+            <img src="../images/question.png" />
+          </div>
+          <div class="confirm-text">Are you sure?</div>
+        </div>
+        <div class="confirm-button">
+          <a href="javascript:;" class="button" onclick="hide()">Ok</a>
+          <a href="javascript:;" class="button" onclick="hide()">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
