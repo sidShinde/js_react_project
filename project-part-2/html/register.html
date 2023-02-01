@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Communications Application</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+    <script src="../js/register.js"></script>
+  </head>
+  <body>
+    <div class="div-title">
+      <h2 class="center-verdana">Register</h2>
+    </div>
+    <form
+      action="./registration-success.html"
+      method="get"
+      onsubmit="return validateRegister()"
+    >
+      <div class="div-block">
+        <span class="span-name input-text"> Full Name </span>
+        <span class="span-input input-text">
+          <input type="text" placeholder="Anne Hunter" id="fullName" />
+        </span>
+      </div>
+      <div class="div-block">
+        <span class="span-email input-text"> Email </span>
+        <span class="span-input input-text">
+          <input type="text" placeholder="anne.hunter@mail.com" id="email" />
+        </span>
+      </div>
+      <div class="div-block">
+        <span class="span-password input-text"> Password </span>
+        <span class="span-input input-text">
+          <input type="password" id="password" />
+        </span>
+      </div>
+      <div class="div-block">
+        <span class="span-confirm-password input-text"> Confirm Password </span>
+        <span class="span-input input-text">
+          <input type="password" id="confirm-password" />
+        </span>
+      </div>
+      <div class="div-block">
+        <input class="register-input" type="submit" value="Register" />
+      </div>
+    </form>
+  </body>
+</html>

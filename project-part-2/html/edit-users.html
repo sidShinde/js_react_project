@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Communications Application</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/login-success.css" />
+    <link rel="stylesheet" href="../css/edit-users.css" />
   </head>
   <body>
     <div>
@@ -16,7 +16,7 @@
             <a href="./chat.html">Group Chat</a>
           </td>
           <td>
-            <a href="./users-list.html">Manage Users</a>
+            <a href="./manage-users.html">Manage Users</a>
           </td>
           <td>
             <a href="./documents-list.html">Manage Documents</a>
@@ -28,10 +28,22 @@
       </table>
     </div>
     <div class="div-title">
-      <h2 class="center-verdana">Login Successful</h2>
+      <h2 class="center-verdana">Edit User Information</h2>
     </div>
-    <div class="center-verdana div-text">
-      <b>Welcome !</b> anne.hunter@mail.com
+    <div class="div-block">
+      <span class="span-name input-text"> Full Name </span>
+      <span class="span-input input-text">
+        <input type="text" placeholder="Anne Hunter" />
+      </span>
+    </div>
+    <div class="div-block">
+      <span class="span-email input-text"> Email </span>
+      <span class="span-input input-text">
+        <input type="text" placeholder="anne.hunter@mail.com" />
+      </span>
+    </div>
+    <div class="div-block">
+      <input type="submit" value="Save" />
     </div>
   </body>
 </html>

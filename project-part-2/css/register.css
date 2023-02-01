@@ -1,0 +1,19 @@
+.span-name {
+  margin-left: 550px;
+}
+
+.span-email {
+  margin-left: 590px;
+}
+
+.span-password {
+  margin-left: 553px;
+}
+
+.span-confirm-password {
+  margin-left: 478px;
+}
+
+.div-block .register-input {
+  font-weight: bold;
+}

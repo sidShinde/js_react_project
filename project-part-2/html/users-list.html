@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Communications Application</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/login-success.css" />
+    <link rel="stylesheet" href="../css/user-list.css" />
   </head>
-  <body>
+  <body onload="onLoad()">
     <div>
-      <table>
+      <table class="nav-bar">
         <tr>
-          <td>
+          <td class="border-right">
             <a href="./chat.html">Group Chat</a>
           </td>
-          <td>
+          <td class="border-right">
             <a href="./users-list.html">Manage Users</a>
           </td>
-          <td>
+          <td class="border-right">
             <a href="./documents-list.html">Manage Documents</a>
           </td>
           <td>
@@ -28,10 +28,18 @@
       </table>
     </div>
     <div class="div-title">
-      <h2 class="center-verdana">Login Successful</h2>
+      <h2>Users</h2>
     </div>
-    <div class="center-verdana div-text">
-      <b>Welcome !</b> anne.hunter@mail.com
+    <div class="div-table">
+      <table class="user-table" id="user-table">
+        <tr>
+          <td class="border-right table-col-1">Name</td>
+          <td class="border-right table-col-2">User Email ID</td>
+          <td></td>
+        </tr>
+      </table>
     </div>
+    <div class="confirm-modal" id="confirm-modal"></div>
+    <script src="../js/users-list.js"></script>
   </body>
 </html>
