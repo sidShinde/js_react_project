@@ -16,10 +16,12 @@ const displayUsers = () => {
       row += `<tr style="background-color: rgb(229, 229, 229)">\n`;
     }
 
+    let link = `./edit-users.html?userID=${users[i].id}`;
+
     row += `<td class="border-right">${users[i].fullName}</td>
             <td class="border-right table-col-2">${users[i].email}</td>
             <td class="table-col-3">
-            <a href="./edit-users.html">Edit</a> \n`;
+            <a href=${link}>Edit</a> \n`;
 
     if (users[i].email.localeCompare(loggedIn.email) != 0) {
       row += `| <a href="javascript:;" onclick='show(${JSON.stringify(
@@ -54,15 +56,21 @@ const displayUsers = () => {
 };
 
 const onLoad = () => {
-  displayUsers();
-  hide();
+  let loggedIn = JSON.parse(localStorage.getItem("loggedIn"));
+
+  if (loggedIn === null) {
+    window.open("../html/welcome.html", "_self");
+  } else {
+    displayUsers();
+    hide();
+  }
 };
 
 const show = (userID) => {
   let deleteBox = document.getElementById("confirm-modal");
   deleteBox.style.display = "block"; // show confirm modal
 
-  deleteBox.innerHTML += `<div class="modal-title">
+  deleteBox.innerHTML = `<div class="modal-title">
     <div class="modal-title-text">Confirm User Deletion</div>
       <div class="modal-close">
         <img class="modal-cross" src="../images/close.png" onclick="hide()" />
@@ -91,6 +99,7 @@ const hide = () => {
 const removeUser = (userID) => {
   let users = JSON.parse(localStorage.getItem("users"));
 
+  // remove user from users storage
   for (let i = 0; i < users.length; i++) {
     if (users[i].id === userID) {
       users.splice(i, 1);
@@ -99,6 +108,34 @@ const removeUser = (userID) => {
   }
 
   localStorage.setItem("users", JSON.stringify(users));
+
+  // remove all chats belonging to the user
+  let chats = localStorage.getItem("chats")
+    ? JSON.parse(localStorage.getItem("chats"))
+    : [];
+
+  let newChats = [];
+  for (let i = 0; i < chats.length; i++) {
+    if (chats[i].userID != userID) {
+      newChats.push(chats[i]);
+    }
+  }
+
+  localStorage.setItem("chats", JSON.stringify(newChats));
+
+  // remove all uploads belonging to the user
+  let uploads = localStorage.getItem("uploads")
+    ? JSON.parse(localStorage.getItem("uploads"))
+    : [];
+
+  let newUploads = [];
+  for (let i = 0; i < uploads.length; i++) {
+    if (uploads[i].userID != userID) {
+      newUploads.push(uploads[i]);
+    }
+  }
+
+  localStorage.setItem("uploads", JSON.stringify(newUploads));
+
   hide();
-  displayUsers();
 };

@@ -1,40 +1,47 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
 }
+
 table {
   border-spacing: 0;
   margin-left: 3px;
 }
-td {
-  width: 1000px;
-  height: 40px;
-  border: 2px solid black;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  border-radius: 3px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(204, 204, 204);
+
+.nav-bar {
+  font-size: 1.5rem;
 }
+
+.border-right {
+  border-right: 0.2rem solid black;
+}
+
 table td:nth-child(2) {
   background-color: white;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
+
 .div-title {
   margin-top: 40px;
 }
-.div-text {
-  margin-top: 50px;
-}
+
 .span-name {
-  margin-left: 550px;
+  font-size: 1.5rem;
+  margin-left: 56.5rem;
 }
+
 .span-email {
-  margin-left: 590px;
+  font-size: 1.5rem;
+  margin-left: 60.3rem;
 }
+
 input[type="submit"] {
   margin-left: 690px;
   font-weight: bold;

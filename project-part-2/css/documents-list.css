@@ -24,10 +24,6 @@ table {
   background-color: rgb(204, 204, 204);
 }
 
-.div-table tr:nth-child(2n + 3) {
-  background-color: rgb(229, 229, 229);
-}
-
 .div-table tr:nth-child(6) td {
   height: 1.4rem;
 }
@@ -169,7 +165,11 @@ input[type="submit"] {
 }
 
 .file-upload span {
-  padding: 2rem;
+  padding: 1rem;
+}
+
+#file-name-input {
+  width: 18rem;
 }
 
 .file-upload button {

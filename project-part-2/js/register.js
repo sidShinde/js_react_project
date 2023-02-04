@@ -50,4 +50,4 @@ const validateRegister = () => {
   let usersString = JSON.stringify(users);
   localStorage.setItem("users", usersString);
   return true;
-}
+};

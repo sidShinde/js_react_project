@@ -10,15 +10,15 @@
   </head>
   <body>
     <div>
-      <table>
+      <table class="nav-bar">
         <tr>
-          <td>
+          <td class="border-right">
             <a href="./chat.html">Group Chat</a>
           </td>
-          <td>
-            <a href="./manage-users.html">Manage Users</a>
+          <td class="border-right">
+            <a href="./users-list.html">Manage Users</a>
           </td>
-          <td>
+          <td class="border-right">
             <a href="./documents-list.html">Manage Documents</a>
           </td>
           <td>
@@ -26,24 +26,25 @@
           </td>
         </tr>
       </table>
-    </div>
     <div class="div-title">
       <h2 class="center-verdana">Edit User Information</h2>
     </div>
     <div class="div-block">
       <span class="span-name input-text"> Full Name </span>
       <span class="span-input input-text">
-        <input type="text" placeholder="Anne Hunter" />
+        <input type="text" id="full-name" placeholder="Anne Hunter" />
       </span>
     </div>
     <div class="div-block">
       <span class="span-email input-text"> Email </span>
       <span class="span-input input-text">
-        <input type="text" placeholder="anne.hunter@mail.com" />
+        <input type="text" id="email" placeholder="anne.hunter@mail.com" />
       </span>
     </div>
     <div class="div-block">
-      <input type="submit" value="Save" />
+      <input type="submit" onclick="editUser()" value="Save" />
     </div>
+
+    <script src="../js/edit-users.js"></script>
   </body>
 </html>

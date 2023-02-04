@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/chat.css" />
   </head>
-  <body>
+  <body onload="onLoad()">
     <div>
       <table class="nav-bar">
         <tr>
@@ -37,27 +37,21 @@
         </div>
       </div>
     </div>
-    <div class="chat-text">
-      <p>[2013-01-27 01:00:16] Text User : Lorem ipsum dolor sit amet,</p>
-      <p>
-        [2013-01-27 01:05:22] Text User : consetetur sadipscing elitr, sed diam
-        nonumy eirmod
-      </p>
-      <p>
-        [2013-01-27 01:11:14] Anne Hunter : tempor invidunt ut labore et dolore
-        magna
-      </p>
-      <p>
-        [2013-01-27 02:11:35] Jack Washk : aliquyam erat, sed diam voluptua. At
-        vero eos et
-      </p>
-    </div>
+    <div class="chat-text" id="chat-text"></div>
     <div class="chat-enter">
-      <span> Anne Hunter </span>
-      <span> I am good</span>
-      <span class="span-button"> Send </span>
-      <span class="span-button"> Refresh </span>
+      <span id="chat-user"></span>
+      <span>
+        <input type="text" id="chat-text-box" />
+      </span>
+      <span>
+        <button class="span-button" onclick="storeChat()">Send</button>
+      </span>
+      <span>
+        <button type="submit" class="span-button" onclick="displayChat()">
+          Refresh
+        </button>
+      </span>
     </div>
-    <div></div>
+    <script src="../js/chat.js"></script>
   </body>
 </html>
