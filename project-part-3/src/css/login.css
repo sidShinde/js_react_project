@@ -1,0 +1,21 @@
+.login-page {
+  font-size: 62.5%;
+}
+
+.login-email {
+  margin-left: 37rem;
+}
+
+.login-password {
+  margin-left: 34.7rem;
+}
+
+.span-input input {
+  height: 2rem;
+  width: 15rem;
+}
+
+.div-block .login-input {
+  margin-left: 45.2rem;
+  font-weight: bold;
+}

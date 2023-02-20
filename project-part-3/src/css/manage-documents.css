@@ -1,0 +1,103 @@
+.docs-page {
+  font-size: 62.5%;
+}
+
+.my-docs {
+  margin-top: 2rem;
+}
+
+.my-docs-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.other-docs {
+  margin-top: 2rem;
+}
+
+.other-docs-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.my-docs-table {
+  width: 100%;
+  font-size: 1rem;
+  border: 0.1rem solid black;
+}
+
+.my-docs-table th {
+  height: 2rem;
+  border-right: 0.1rem solid black;
+}
+
+.my-docs-table td {
+  height: 2rem;
+  border-right: 0.1rem solid black;
+}
+
+.my-docs-table thead {
+  background-color: rgb(204, 204, 204);
+}
+
+.my-docs-table tr:nth-child(2n + 2) {
+  background-color: rgb(229, 229, 229);
+}
+
+.other-docs-table {
+  width: 100%;
+  font-size: 1rem;
+  border: 0.1rem solid black;
+}
+
+.other-docs-table th {
+  height: 2rem;
+  border-right: 0.1rem solid black;
+}
+
+.other-docs-table td {
+  height: 2rem;
+  border-right: 0.1rem solid black;
+}
+
+.other-docs-table thead {
+  background-color: rgb(204, 204, 204);
+}
+
+.other-docs-table tr:nth-child(2n + 2) {
+  background-color: rgb(229, 229, 229);
+}
+
+.add-upload-btn {
+    position: absolute;
+    left: 2rem;
+    top: 36rem;
+    z-index: 8;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    background-color: aqua;
+}
+
+.modal-body{
+    font-size: 1rem;
+}
+
+.modal-body span {
+    margin-left: 2rem;
+}
+  
+.modal-div-2 {
+    margin-top: 2rem;
+}
+
+.modal-div-2 button {
+    border-radius: 0.3rem;
+}
+
+.my-docs-table {
+    border: 0.1rem solid black;
+    border-radius: 0.8rem;
+    margin-left: 0.3rem;
+    font-size: 1rem;
+}
+

@@ -1,0 +1,78 @@
+.chat-page {
+  font-size: 62.5%;
+  margin: 0;
+}
+
+.close-icon {
+  float: right;
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.chat-title {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  border: 2px solid black;
+  margin-right: -1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.group-chat {
+  padding-left: 700px;
+  padding-top: 0px;
+  height: 20px;
+}
+
+.chat-area {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  height: 15rem;
+  max-height: 15rem;
+  overflow-y: auto;
+}
+
+.chat-line {
+  font-size: 1rem;
+  margin-bottom: -0.1rem;
+}
+
+.send-chat {
+  font-size: 1rem;
+  height: 4rem;
+  border: 2px solid black;
+  padding-top: 0.6rem;
+  margin-right: -1rem;
+}
+
+.loggedin-name {
+  margin-left: 5rem;
+  font-weight: bold;
+}
+
+.chat-text-span {
+  margin-left: 2rem;
+}
+
+.chat-input {
+  height: 2.5rem;
+  width: 70%;
+}
+
+.send-btn-span {
+  margin-left: 2rem;
+}
+
+.send-btn {
+  background-color: white;
+  border-radius: 0.3rem;
+}
+
+.refresh-btn-span {
+  margin-left: 2rem;
+}
+
+.refresh-btn {
+  background-color: white;
+  border-radius: 0.3rem;
+}

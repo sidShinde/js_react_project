@@ -1,0 +1,44 @@
+.edit-users {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+table {
+  border-spacing: 0;
+  margin-left: 3px;
+}
+
+.nav-bar {
+  font-size: 1.5rem;
+}
+
+.border-right {
+  border-right: 0.2rem solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.div-title {
+  margin-top: 40px;
+}
+
+.span-name {
+  font-size: 1.5rem;
+  margin-left: 32.5rem;
+}
+
+.span-email {
+  font-size: 1.5rem;
+  margin-left: 35.8rem;
+}
+
+input[type="submit"] {
+  margin-left: 44rem;
+  font-weight: bold;
+}
